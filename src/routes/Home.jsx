@@ -210,15 +210,21 @@ function Home() {
                 )
               })}
           </div>
+
+          <div className={`d-f-c`}>
+            <a href="./applenz-privacy-policy.html" target="_blank">
+              <small>Privacy Policy</small>
+            </a>
+          </div>
         </div>
       </main>
 
       <footer className={`${styles.footer}`}>
         <a href={`https://aratta.dev`} target={`_blank`} className={`d-flex flex-row align-items-center grid--gap-050`}>
-        <figure className={`d-f-c`}>
-        <img alt={`${import.meta.env.VITE_AUTHOR}`} src={ArattaLabsLogo} />
-        </figure>
-        <small>{import.meta.env.VITE_AUTHOR}</small>
+          <figure className={`d-f-c`}>
+            <img alt={`${import.meta.env.VITE_AUTHOR}`} src={ArattaLabsLogo} />
+          </figure>
+          <small>{import.meta.env.VITE_AUTHOR}</small>
         </a>
       </footer>
     </div>
