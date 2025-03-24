@@ -124,7 +124,7 @@ function Home() {
       <header className={`${styles.header}`}>
         <div className={`__container d-f-c flex-column`} data-width={`small`}>
           <a href="https://vite.dev" target="_blank">
-            <img src={AppLenzLogo} className="logo" alt="Vite logo" />
+            <img src={AppLenzLogo} alt={`${import.meta.env.VITE_NAME} Logo`} />
           </a>
           <h2>{import.meta.env.VITE_NAME}</h2>
           <small>{import.meta.env.VITE_SLOGAN}</small>
