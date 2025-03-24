@@ -5,13 +5,13 @@ import './index.scss'
 import './styles/global.scss'
 
 const Home = React.lazy(() => import('./routes/Home.jsx'))
-const Admin = React.lazy(() => import('./routes/Admin.jsx'))
+// const Admin = React.lazy(() => import('./routes/Admin.jsx'))
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
     <Routes>
       <Route index element={<Home />} />
-      <Route path={`admin`} element={<Admin />} />
+      {/* <Route path={`admin`} element={<Admin />} /> */}
     </Routes>
   </BrowserRouter>
 )
