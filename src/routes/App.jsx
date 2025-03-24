@@ -211,7 +211,7 @@ function App() {
               })}
           </div>
 
-          <div className={`d-f-c`}>
+          <div className={`d-f-c mt-40`}>
             <a href="./applenz-privacy-policy.html" target="_blank">
               <small>Privacy Policy</small>
             </a>
