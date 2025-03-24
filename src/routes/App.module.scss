@@ -4,7 +4,6 @@
 }
 
 .header {
-
   img {
     width: 64px;
   }
@@ -69,6 +68,8 @@
 }
 
 .list {
+  max-height: 550px;
+  overflow-y: auto;
   &__item {
     padding: 0.4rem;
     border-radius: var(--global-border-radius);
@@ -102,10 +103,12 @@
   }
 
   figure {
+    position: relative;
     background: linear-gradient(90deg, #f2f3f5 0%, #ebecee 100%);
     border-radius: var(--global-border-radius);
     width: 80px;
     height: 80px;
+    isolation: isolate;
 
     img {
       width: 50%;

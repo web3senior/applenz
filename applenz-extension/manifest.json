@@ -1,7 +1,7 @@
 {
   "name": "AppLenz",
   "description": "Decentralize Your Browsing Experience",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "manifest_version": 3,
   "icons": {
     "512": "android-chrome-512x512.png"

@@ -175,7 +175,7 @@ function App() {
                       </figure>
 
                       <ul className={`d-flex flex-column align-items-between justify-content-around h-100 flex-1`}>
-                        <li className={`d-flex align-items-center grid--gap-025`}>
+                        <li className={`d-flex align-items-center grid--gap-025`} title={`Category ${item.category_name}`}>
                           <h3>
                             <b>{item.name}</b>
                           </h3>
@@ -194,7 +194,7 @@ function App() {
                           </svg>
                         </li>
                         <li className={`w-100`}>
-                          <p>{item.description.substring(1, 50)}</p>
+                          <p>{item.description.substring(0, 50)}</p>
                         </li>
                       </ul>
 
