@@ -3,10 +3,10 @@ import AppLenzLogo from '/applenz.svg'
 import IconOpenNewTap from './../assets/icon-open-in-new-tap.svg'
 import ArattaLabsLogo from './../assets/aratta-labs.svg'
 import ArattaLabsLogoWhite from './../assets/aratta-labs-white.svg'
-import { getNetwork, getCategory, getApp } from './../util/api'
-import styles from './Home.module.scss'
+import { getNetwork, getCategory, getApp } from '../util/api'
+import styles from './App.module.scss'
 
-function Home() {
+function App() {
   const [network, setNetwork] = useState({ list: [] })
   const [category, setCategory] = useState({ list: [] })
   const [app, setApp] = useState({ list: [] })
@@ -231,4 +231,4 @@ function Home() {
   )
 }
 
-export default Home
+export default App
