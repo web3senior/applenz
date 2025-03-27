@@ -135,7 +135,7 @@ function App() {
         <div className={`__container`} data-width={`medium`}>
           <div className={`${styles.form}`}>
             <form method="POST" onSubmit={(e) => sendMessage(e)}>
-              <input ref={qRef} type={`text`} placeholder={`Search among ${app.list.length} apps`} onChange={(e) => filter(e)} />
+              <input ref={qRef} type={`text`} placeholder={`Search among ${app.list.length} apps`} onChange={(e) => filter(e)} disabled={app.list.length < 1} />
             </form>
 
             <div className={`${styles.filter} d-flex grid--gap-050`}>
@@ -152,11 +152,19 @@ function App() {
               </select>
 
               <select ref={networkRef} name={`network`}>
+                <button>
+                  <selectedcontent className={`d-flex flex-row`}></selectedcontent>
+                  <span class="arrow"></span>
+                </button>
+
                 <optgroup label={`Networks`}>
                   {network.list.length > 0 &&
                     network.list.map((item, i) => (
-                      <option key={i} value={item.name}>
-                        {item.name} ({item.type})
+                      <option key={i} value={item.name} className={`d-flex flex-row`}>
+                        <img src={item.logo} />
+                        <span>
+                          {item.name}
+                        </span>
                       </option>
                     ))}
                 </optgroup>
@@ -169,12 +177,12 @@ function App() {
               app.list.map((item, i) => {
                 return (
                   <div key={i} className={`${styles.list__item}`}>
-                    <div className={`${styles.list__item__body} d-flex align-items-center justify-content-between grid--gap-1`}>
-                      <figure className={`d-f-c `}>
+                    <div className={`${styles.list__item__body} grid grid--fill`} style={{ '--data-width': `80px` }}>
+                      <figure className={`d-f-c`}>
                         <img alt={item.name} src={item.logo} />
                       </figure>
 
-                      <ul className={`d-flex flex-column align-items-between justify-content-around h-100 flex-1`}>
+                      <ul className={`d-flex flex-column align-items-between justify-content-around h-100 flex-1`} style={{ width: `100%` }}>
                         <li className={`d-flex align-items-center grid--gap-025`} title={`Category ${item.category_name}`}>
                           <h3>
                             <b>{item.name}</b>
@@ -198,7 +206,7 @@ function App() {
                         </li>
                       </ul>
 
-                      <div className={`d-flex grid--gap-025`}>
+                      <div className={`d-flex grid--gap-025 ${styles.action}`}>
                         <button disabled>View</button>
                         <a target={`_blank`} href={`${item.url}`} className={`d-flex align-items-center grid--gap-025`}>
                           Open

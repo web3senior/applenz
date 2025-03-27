@@ -68,3 +68,81 @@ button:focus-visible {
 
 
 }
+
+
+
+select,
+::picker(select) {
+  appearance: base-select;
+  font: -webkit-small-control;
+  color:#1c1c1c;
+}
+
+// /* hide checkmark */
+// option::checkmark {
+//   display: none;
+// }
+
+// /* change from button to select itelf to style the button */
+select {
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 0.75rem;
+  transition-duration: 0.25s;
+  align-items: center;
+}
+
+option {
+  font-size: 1rem;
+  display: grid;
+  grid-template-columns: 2rem auto;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  transition-duration: 0.25s;
+  /*  reset UA styles, can remove these two lines with patch landing soon  */
+  place-items: initial;
+  align-items: center;
+}
+
+// option:hover,
+// option:focus-visible {
+//   background: #eaeaea;
+// }
+
+
+// select::picker-icon{
+//   display:none
+// }
+
+// selectedcontent .text {
+//   display: none;
+// }
+
+// .arrow {
+//   border-left: 0.3rem solid transparent;
+//   border-right: 0.3rem solid transparent;
+//   border-top: 0.3rem solid;
+// }
+
+// ::picker(select) {
+//   border: none;
+//   padding: 0.5rem 0;
+//   overflow-x: hidden;
+//   border-radius: 5px;
+
+//   transition: width 0.5s;
+//   /*  resets from UA  */
+//   min-inline-size: 0;
+//   box-shadow: 0px 12.8px 28.8px rgba(0, 0, 0, 0.13), 0px 0px 9.2px rgba(0, 0, 0, 0.11);
+// }
+
+// select:has(:popover-open) button {
+//   background: lightgray;
+// }
+
+// /* animate the text in on hover */
+// ::picker(select):hover,
+// select:has(option:focus-visible)::picker(select) {
+//   /*  auto width!  */
+
+// }
