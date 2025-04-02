@@ -4,9 +4,6 @@
 
 AppLenz is a Chrome extension designed to simplify and secure your exploration of the decentralized web. We provide a clear and focused way to discover and interact with decentralized applications (dapps).
 
-## Live on Chrome Web Store
-https://chromewebstore.google.com/detail/applenz/mddpigokamaojfdmkemnglobajplimdh?hl=en-US&utm_source=GitHub
-
 **Features:**
 
 * **Verified Dapp Listings:** Browse a curated collection of verified dapps, ensuring a safer browsing experience.
@@ -14,6 +11,14 @@ https://chromewebstore.google.com/detail/applenz/mddpigokamaojfdmkemnglobajplimd
 * **User-Friendly Interface:** Enjoy a seamless and intuitive interface, making dapp discovery easy for everyone.
 * **Real time security alerts:** Get notified when a website is potentially malicious.
 * **Continuously growing app list:** We are adding more apps everyday.
+
+**Impacts:**
+
+* **Increased User Trust:** By verifying dapps and providing audit information, AppLenz builds trust in the decentralized ecosystem.
+* **Reduced Risk of Scams:** Protecting users from malicious dapps and phishing attempts minimizes financial losses and security breaches.
+* **Enhanced Dapp Adoption:** A safer and more user-friendly experience encourages wider adoption of decentralized applications.
+* **Democratized Access:** Simplifying dapp discovery makes the decentralized web more accessible to a broader audience, regardless of technical expertise.
+* **Improved Security Standards:** By promoting smart contract audits, AppLenz contributes to raising security standards within the blockchain community.
 
 **Why AppLenz?**
 
@@ -44,7 +49,7 @@ This project is licensed under the [MIT License](LICENSE).
 
 **Contact:**
 
-* atenyun[at]gmail[dot]com
-* www.aratta.dev
+* [Your Website/Social Media Links]
+* [Your Email Address]
 
 **We're just getting started! Stay tuned for more updates and features.**
